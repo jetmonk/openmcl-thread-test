@@ -1,0 +1,7 @@
+Wild ill-informed speculation: This Arm manual
+http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dht0008a/ch01s03s02.html
+suggests that a DMB instruction is needed after a lock operation, but disassembling
+ccl::%lock-recursive-lock-ptr doesn’t show this instruction, assuming everything it does is inlined.
+
+Some more notes on DMB:
+https://stackoverflow.com/questions/42698277/arm-cortex-m4-mutex-lock-dmb-instruction
