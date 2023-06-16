@@ -42,3 +42,6 @@ Also tried: using 'taskset' linux command to force the lisp process to
 run on one core, in the belief that different cores might not have a
 sync'ed vision of current memory (lock) status.   This did not seem to
 help, arguing against (dmb) instruction solution.
+---
+NO, taskset DOES help - I was using it wrong according to Robert M.
+I still think the DMB instruction is missing somewhere.  In C code?
